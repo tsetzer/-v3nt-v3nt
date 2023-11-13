@@ -36,7 +36,7 @@ def main():
     st.write("\n --- \n\n\n")
 
     today = datetime.date.today()
-    today = datetime.date(2023,12,12)
+    # today = datetime.date(2023,12,12)
     # st.write(today)
     # cols = st.columns(4)  # 4 columns for a grid-like layout
 
