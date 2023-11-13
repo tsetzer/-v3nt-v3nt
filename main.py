@@ -38,10 +38,19 @@ def main():
     today = datetime.date.today()
     today = datetime.date(2023,12,12)
     # st.write(today)
-    cols = st.columns(2)  # 4 columns for a grid-like layout
+    cols = st.columns(4)  # 4 columns for a grid-like layout
+
+    st.write('''<style>
+
+    [data-testid="cols"] {
+        width: calc(33.3333% - 1rem) !important;
+        flex: 1 1 calc(33.3333% - 1rem) !important;
+        min-width: calc(33% - 1rem) !important;
+    }
+    </style>''', unsafe_allow_html=True)
 
     for i in range(1, 25):
-        with cols[(i-1) % 2]:
+        with cols[(i-1) % 4]:
             if today >= datetime.date(today.year, 12, i):
                 # st.write(f"Türchen {i}")
                 st.link_button(f"Türchen {i}", youtube_links[i])
