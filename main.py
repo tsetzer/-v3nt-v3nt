@@ -38,7 +38,7 @@ def main():
     today = datetime.date.today()
     today = datetime.date(2023,12,12)
     # st.write(today)
-    cols = st.columns(4)  # 4 columns for a grid-like layout
+    # cols = st.columns(4)  # 4 columns for a grid-like layout
 
     st.write('''<style>
 
@@ -50,14 +50,14 @@ def main():
     </style>''', unsafe_allow_html=True)
 
     for i in range(1, 25):
-        with cols[(i-1) % 4]:
-            if today >= datetime.date(today.year, 12, i):
-                # st.write(f"Türchen {i}")
-                st.link_button(f"Türchen {i}", youtube_links[i])
+    # with cols[(i-1) % 4]:
+        if today >= datetime.date(today.year, 12, i):
+            # st.write(f"Türchen {i}")
+            st.link_button(f"Türchen {i}", youtube_links[i])
 
-            else:
-                # st.link_button(f"Türchen {i}: Noch geheim... 🤐🤶", youtube_links[i], disabled=True)
-                st.link_button(f"Türchen {i}", youtube_links[i], disabled=True)
+        else:
+            # st.link_button(f"Türchen {i}: Noch geheim... 🤐🤶", youtube_links[i], disabled=True)
+            st.link_button(f"Türchen {i}", youtube_links[i], disabled=True)
 
 if __name__ == "__main__":
     main()
