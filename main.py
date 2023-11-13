@@ -1,6 +1,8 @@
 import streamlit as st
 import datetime
 
+# st.set_page_config(layout="wide")
+
 # Dictionary to store YouTube links
 youtube_links = {
     1: "https://youtube.com/shorts/0Y10H_hkoKI?feature=share",
@@ -36,10 +38,10 @@ def main():
     today = datetime.date.today()
     today = datetime.date(2023,12,12)
     # st.write(today)
-    cols = st.columns(4)  # 4 columns for a grid-like layout
+    cols = st.columns(2)  # 4 columns for a grid-like layout
 
     for i in range(1, 25):
-        with cols[(i-1) % 4]:
+        with cols[(i-1) % 2]:
             if today >= datetime.date(today.year, 12, i):
                 # st.write(f"Türchen {i}")
                 st.link_button(f"Türchen {i}", youtube_links[i])
