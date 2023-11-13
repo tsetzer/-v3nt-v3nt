@@ -32,13 +32,16 @@ youtube_links = {
 }
 
 def main():
-    st.title("🎄️:heart: Annas Adventskalender :heart: 🌨")
-    st.write("\n --- \n\n\n")
+
+    st.markdown("<h1 style='text-align: center'>🎄️❤️ Annas ❤️🎄</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center'>🌨️❤️ Adventskalender ❤️🌨</h1>", unsafe_allow_html=True)
+    st.write("\n --- \n")
+
 
     today = datetime.date.today()
     # today = datetime.date(2023,12,12)
     # st.write(today)
-    # cols = st.columns(4)  # 4 columns for a grid-like layout
+    cols = st.columns(3)  # 4 columns for a grid-like layout
 
     st.write('''<style>
 
@@ -51,13 +54,20 @@ def main():
 
     for i in range(1, 25):
     # with cols[(i-1) % 4]:
-        if today >= datetime.date(today.year, 12, i):
-            # st.write(f"Türchen {i}")
-            st.link_button(f"Türchen {i}", youtube_links[i])
+        with cols[0]:
+            st.write('')
 
-        else:
-            # st.link_button(f"Türchen {i}: Noch geheim... 🤐🤶", youtube_links[i], disabled=True)
-            st.link_button(f"Türchen {i}", youtube_links[i], disabled=True)
+        with cols[1]:
+            if today >= datetime.date(today.year, 12, i):
+                # st.write(f"Türchen {i}")
+                st.link_button(f"Türchen {i}", youtube_links[i])
+
+            else:
+                # st.link_button(f"Türchen {i}: Noch geheim... 🤐🤶", youtube_links[i], disabled=True)
+                st.link_button(f"Türchen {i}", youtube_links[i], disabled=True)
+
+        with cols[2]:
+            st.write('')
 
 if __name__ == "__main__":
     main()
