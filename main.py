@@ -30,22 +30,23 @@ youtube_links = {
 }
 
 def main():
-    st.title("🎄️🌨️❤️ -- Adventskalender -- 🫶🎁❄")
-    st.header("\n für ❤️Anna️❤️")
+    st.title("🎄️:heart: Annas Adventskalender :heart: 🌨")
+    st.write("\n --- \n\n\n")
 
-    # today = datetime.date.today()
+    today = datetime.date.today()
     today = datetime.date(2023,12,12)
-    st.write(today)
+    # st.write(today)
     cols = st.columns(4)  # 4 columns for a grid-like layout
 
     for i in range(1, 25):
         with cols[(i-1) % 4]:
             if today >= datetime.date(today.year, 12, i):
-                st.write(f"Türchen {i}")
-                # st_player(youtube_links[i])  # Embed the YouTube video
-                st.video(youtube_links[i])
+                # st.write(f"Türchen {i}")
+                st.link_button(f"Türchen {i}", youtube_links[i])
+
             else:
-                st.write(f"Türchen {i}: Noch geheim... 🤐🤶")
+                # st.link_button(f"Türchen {i}: Noch geheim... 🤐🤶", youtube_links[i], disabled=True)
+                st.link_button(f"Türchen {i}", youtube_links[i], disabled=True)
 
 if __name__ == "__main__":
     main()
