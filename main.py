@@ -39,16 +39,13 @@ def main():
 
     today = datetime.date.today()
     # today = datetime.date(2023,12,17)
-    # st.write(today)
 
     for i in range(1, 25):
 
         if today >= datetime.date(today.year, 12, i):
-            # st.write(f"Türchen {i}")
             st.link_button(f"Türchen {i}", youtube_links[i])
 
         else:
-            # st.link_button(f"Türchen {i}: Noch geheim... 🤐🤶", youtube_links[i], disabled=True)
             st.link_button(f" Geheimes Türchen {i}", youtube_links[i], disabled=True)
 
 
