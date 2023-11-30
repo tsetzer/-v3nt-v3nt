@@ -39,8 +39,8 @@ def main():
     st.markdown("<h1 style='text-align: center'>🌨️❤️ Adventskalender ❤️🌨</h1>", unsafe_allow_html=True)
     st.write("\n --- \n")
 
-    today = datetime.date.today()
-    # today = datetime.date(2023,12,17)
+    # today = datetime.date.today()
+    today = datetime.date(2023,12,21)
 
     for i in range(1, 25):
 
