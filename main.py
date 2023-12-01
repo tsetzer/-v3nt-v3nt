@@ -43,7 +43,6 @@ def main():
     st.write("\n --- \n")
 
     today = datetime.date.today()
-    st.write("Heutiges Datum:", today)
     # today = datetime.date(2023,12,21)
 
     for i in range(1, 25):
