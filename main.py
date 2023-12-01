@@ -6,7 +6,7 @@ import datetime
 # Dictionary to store YouTube links
 youtube_links = {
     1: "https://youtu.be/uMMscUKV70M",           # Karin
-    2: "https://youtu.be/VAMRi9_qbCc",           # Guenters
+    2: "https://youtu.be/APLExYnJsNw",           # Guenters
     3: "https://youtu.be/PP7fQf0NTfo",           # Kreta
     4: "https://youtu.be/MTwjOV1JrLM",           # Sascha
     5: "https://youtu.be/tyUe_7oQKDE",           # Segeln
@@ -15,23 +15,26 @@ youtube_links = {
     8: "https://youtu.be/DC1w7Rv_lIc",           # Oma Guenter
     9: "https://youtu.be/aBTnvXFkxRY",           # Oma Mama
     10: "https://youtu.be/dmrDpjsm67g",           # West Coast
-    11: "https://youtu.be/zL_CbIS-i1I",           # Boston
+    11: "https://youtu.be/G_8m29ZTfYo",          # Eleonora & Jonas
     12: "https://youtube.com/shorts/DoICWB4ZgQU?feature=share", # Regina
-    13: "https://youtu.be/tR882g-lCTs",           # Gardasee
+    13: "https://youtu.be/zL_CbIS-i1I",           # Boston
     14: "https://youtube.com/shorts/pRSlqy5rqY4?feature=share", # Sven
-    15: "https://youtu.be/CgcBhleSUNk",          # Malaysia
+    15: "",
     16: "https://youtube.com/shorts/Wdx6iojoOZE?feature=share", # Sonia
-    17: "https://youtu.be/m7N-XmOwrmg",          # Java
+    17: "",
     18: "https://youtube.com/shorts/nbwpvfsMsAc?feature=share", # Nga & Marchy
     19: "https://youtu.be/WlNeWszFnIE",          # Elena Alex
-    20: "https://youtu.be/wE9YZ4HH_70",          # Lombok
+    20: "https://youtu.be/tR882g-lCTs",           # Gardasee
     21: "https://youtube.com/shorts/LE3YHn2Vt48?feature=share", # Alex und Anna
-    22: "https://youtu.be/Fg2jtjZTj70",          # Singapur
+    22: "https://youtu.be/CgcBhleSUNk",          # Malaysia
     23: "",
     24: "",
 }
 
 
+#"https://youtu.be/m7N-XmOwrmg",          # Java
+#"https://youtu.be/wE9YZ4HH_70",          # Lombok
+# "https://youtu.be/Fg2jtjZTj70",          # Singapur
 
 def main():
 
