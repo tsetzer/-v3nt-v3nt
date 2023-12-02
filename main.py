@@ -53,7 +53,7 @@ def main():
     # Use only the date part
     today = shifted_time.date()
 
-    st.write(today)
+    # st.write(today)
 
     for i in range(1, 25):
         if today >= datetime(today.year, 12, i).date():
