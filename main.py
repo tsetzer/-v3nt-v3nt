@@ -15,7 +15,7 @@ youtube_links = {
     6: "https://youtu.be/q9BMYjceeMQ",           # Setzers
     7: "https://youtube.com/shorts/he1RYZT_m1E?feature=share",      # Julia & Lukas
     8: "https://youtu.be/DC1w7Rv_lIc",           # Oma Guenter
-    9: "https://youtu.be/aBTnvXFkxRY",           # Oma Mama
+    9: "https://youtu.be/aBTnvXFkxRY",           # Oma Dell
     10: "https://youtu.be/dmrDpjsm67g",          # West Coast
     11: "https://youtube.com/shorts/nbwpvfsMsAc?feature=share",     # Nga & Marchy
     12: "https://youtube.com/shorts/DoICWB4ZgQU?feature=share",     # Regina
@@ -45,7 +45,6 @@ def main():
     st.markdown("<h1 style='text-align: center'>🌨️❤️ Adventskalender ❤️🌨</h1>", unsafe_allow_html=True)
     st.write("\n --- \n")
 
-
     # Get current server time and shift by 7 hours
     server_time = datetime.now()
     shifted_time = server_time + timedelta(hours=7)
@@ -53,15 +52,19 @@ def main():
     # Use only the date part
     today = shifted_time.date()
 
-    # st.write(today)
-
     for i in range(1, 25):
-        if today >= datetime(today.year, 12, i).date():
+        if i == 6 and today >= datetime(today.year, 12, i).date():
+            st.link_button(f"Türchen {i}a", youtube_links[i])
+            st.link_button(f"Türchen {i}b", "https://maps.app.goo.gl/QNHRA1ENLAf2cjNn7")
+
+        elif today >= datetime(today.year, 12, i).date():
             st.link_button(f"Türchen {i}", youtube_links[i])
+
         else:
             st.link_button(f" Geheimes Türchen {i}", youtube_links[i], disabled=True)
 
 
+#### OLD CODE WITHOUT TIME SHIFT
 #     today = datetime.date.today()
 #     # today = datetime.date(2023,12,21)
 #
