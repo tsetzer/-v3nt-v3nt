@@ -3,8 +3,6 @@ import streamlit as st
 from datetime import datetime, timedelta
 
 
-# st.set_page_config(layout="wide")
-
 # Dictionary to store YouTube links
 youtube_links = {
     1: "https://youtu.be/uMMscUKV70M",           # Karin
@@ -33,7 +31,6 @@ youtube_links = {
     24: "",
 }
 
-
 # "https://youtu.be/m7N-XmOwrmg",          # Java
 # "https://youtu.be/wE9YZ4HH_70",          # Lombok
 # "https://youtu.be/Fg2jtjZTj70",          # Singapur
@@ -45,7 +42,7 @@ def main():
     st.markdown("<h1 style='text-align: center'>🌨️❤️ Adventskalender ❤️🌨</h1>", unsafe_allow_html=True)
     st.write("\n --- \n")
 
-    # Get current server time and shift by 7 hours
+    # Get current server time and shift by X hours
     server_time = datetime.now()
     shifted_time = server_time + timedelta(hours=7)
 
@@ -62,19 +59,6 @@ def main():
 
         else:
             st.link_button(f" Geheimes Türchen {i}", youtube_links[i], disabled=True)
-
-
-#### OLD CODE WITHOUT TIME SHIFT
-#     today = datetime.date.today()
-#     # today = datetime.date(2023,12,21)
-#
-#     for i in range(1, 25):
-#
-#         if today >= datetime.date(today.year, 12, i):
-#             st.link_button(f"Türchen {i}", youtube_links[i])
-#
-#         else:
-#             st.link_button(f" Geheimes Türchen {i}", youtube_links[i], disabled=True)
 
 
 if __name__ == "__main__":
