@@ -44,7 +44,7 @@ def main():
     ### DEBUG END
 
     # Get current server time and shift by X hours
-    server_time = datetime.now()
+    # server_time = datetime.now()
     shifted_time = server_time + timedelta(hours=7)
 
     # Use only the date part
