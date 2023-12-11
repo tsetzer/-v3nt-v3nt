@@ -26,8 +26,8 @@ youtube_links = {
     19: "https://youtu.be/WlNeWszFnIE",          # Elena Alex
     20: "https://youtu.be/tR882g-lCTs",          # Gardasee
     21: "https://youtube.com/shorts/LE3YHn2Vt48?feature=share",     # Alex und Anna
-    22: "",
-    23: "",
+    22: "https://youtu.be/wZUFZvcbt9M",          # Bella
+    23: "https://youtube.com/shorts/u6RS_6yiIS0?feature=share",     # Kim
     24: "https://youtu.be/CgcBhleSUNk",          # Malaysia"
 }
 
