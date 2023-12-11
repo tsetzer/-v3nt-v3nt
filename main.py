@@ -39,7 +39,7 @@ def main():
     st.write("\n --- \n")
 
     ### DEBUG manual server_time for testing
-    # server_time = datetime(2022, 12, 28, 23, 55, 59, 342380)
+    server_time = datetime(2022, 12, 28, 23, 55, 59, 342380)
     # st.write(server_time)
     ### DEBUG END
 
