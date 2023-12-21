@@ -31,7 +31,6 @@ youtube_links = {
     24: "https://youtu.be/CgcBhleSUNk",          # Malaysia"
 }
 
-"
 
 def main():
 
