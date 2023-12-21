@@ -26,8 +26,8 @@ youtube_links = {
     19: "https://youtu.be/WlNeWszFnIE",          # Elena Alex
     20: "https://youtu.be/tR882g-lCTs",          # Gardasee
     21: "https://youtube.com/shorts/LE3YHn2Vt48?feature=share",     # Alex und Anna
-    22: "https://youtu.be/wZUFZvcbt9M",          # Bella // Kim
-    23: "https://youtu.be/CY_c6rUTzPI",          # Marcel & Nadine
+    22: "https://youtu.be/CY_c6rUTzPI",          # Marcel & Nadine
+    23: "https://youtu.be/wZUFZvcbt9M",          # Bella // Kim
     24: "https://youtu.be/CgcBhleSUNk",          # Malaysia"
 }
 
