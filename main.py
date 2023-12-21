@@ -41,7 +41,7 @@ def main():
 
     ### DEBUG manual server_time for testing
     server_time = datetime(2023, 12, 28, 23, 55, 59, 342380)
-    # st.write(server_time)
+    st.write(server_time)
     ### DEBUG END
 
     # Get current server time and shift by X hours
