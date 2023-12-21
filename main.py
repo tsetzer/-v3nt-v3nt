@@ -26,11 +26,12 @@ youtube_links = {
     19: "https://youtu.be/WlNeWszFnIE",          # Elena Alex
     20: "https://youtu.be/tR882g-lCTs",          # Gardasee
     21: "https://youtube.com/shorts/LE3YHn2Vt48?feature=share",     # Alex und Anna
-    22: "https://youtu.be/wZUFZvcbt9M",          # Bella
-    23: "https://youtube.com/shorts/u6RS_6yiIS0?feature=share",     # Kim
+    22: "https://youtu.be/wZUFZvcbt9M",          # Bella // Kim
+    23: "https://youtu.be/CY_c6rUTzPI",          # Marcel & Nadine
     24: "https://youtu.be/CgcBhleSUNk",          # Malaysia"
 }
 
+"
 
 def main():
 
@@ -39,12 +40,12 @@ def main():
     st.write("\n --- \n")
 
     ### DEBUG manual server_time for testing
-    # server_time = datetime(2022, 12, 28, 23, 55, 59, 342380)
+    server_time = datetime(2022, 12, 28, 23, 55, 59, 342380)
     # st.write(server_time)
     ### DEBUG END
 
     # Get current server time and shift by X hours
-    server_time = datetime.now()
+    # server_time = datetime.now()
     shifted_time = server_time + timedelta(hours=7)
 
     # Use only the date part
@@ -58,6 +59,10 @@ def main():
         elif i == 12 and today >= datetime(today.year, 12, i).date():
             st.link_button(f"Türchen {i}a", youtube_links[i])
             st.link_button(f"Türchen {i}b", "https://youtube.com/shorts/pRSlqy5rqY4?feature=share")      # Sven
+
+        elif i == 23 and today >= datetime(today.year, 12, i).date():
+            st.link_button(f"Türchen {i}a", youtube_links[i])
+            st.link_button(f"Türchen {i}b", "https://youtube.com/shorts/u6RS_6yiIS0?feature=share")      # Kim
 
         elif i == 24 and today >= datetime(today.year, 12, i).date():
             st.link_button(f"Türchen {i}a", youtube_links[i])
